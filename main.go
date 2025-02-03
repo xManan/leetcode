@@ -8,12 +8,12 @@ import (
 )
 
 func main() {
-    testCases := [][]int {
-        {1,4,3,3,2},
-        {3,3,3,3},
-        {3,2,1},
+    testCases := []string {
+        "A man, a plan, a canal: Panama",
+        "race a car",
+        " ",
     }
     for _, testCase := range testCases {
-	    fmt.Println(solutions.LongestMonotonicSubarray(testCase))
+	    fmt.Println(solutions.IsPalindrome(testCase))
     }
 }
