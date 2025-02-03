@@ -8,9 +8,12 @@ import (
 )
 
 func main() {
-    var testCase []int
-	testCase = []int{2,2,1}
-	testCase = []int{4,1,2,1,2}
-	testCase = []int{1}
-	fmt.Println(solutions.SingleNumber(testCase))
+    testCases := [][]int {
+        {1,4,3,3,2},
+        {3,3,3,3},
+        {3,2,1},
+    }
+    for _, testCase := range testCases {
+	    fmt.Println(solutions.LongestMonotonicSubarray(testCase))
+    }
 }
